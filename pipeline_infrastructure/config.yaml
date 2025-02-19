@@ -1,0 +1,21 @@
+appName: pix-devops-standup
+aws:
+  accountId: '925770124887'
+  defaultRegion: eu-west-1
+github:
+  mainBranch: master
+  ownerName: pixartprinting
+  repoName: devops.test.cib
+  token: git_token
+saving:
+  defaultTag:
+    NAME: Saving
+    VALUE: Enabled
+  inNDays: 3
+  tagsPerEnvironment:
+    pipeline:
+      Delete: 0 20 {DAY} {MONTH} .
+    production:
+      Delete: 0 20 {DAY} {MONTH} .
+    staging:
+      Delete: 0 20 {DAY} {MONTH} .
